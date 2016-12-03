@@ -4,7 +4,7 @@
 \name{eucalyptus}
 \alias{eucalyptus}
 \title{A amesure plot of Eucalyptus}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2240 rows and 11 columns.}
+\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2240 rows and 8 columns.}
 \usage{
 eucalyptus
 }
