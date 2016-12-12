@@ -2,11 +2,11 @@
 % Please edit documentation in R/02_distance_dependent.R
 \name{dd_hegyi}
 \alias{dd_hegyi}
-\title{Distance-dependent Hegyi (1974) index}
+\title{Index of Hegyi (1974)}
 \usage{
 dd_hegyi(id, x, y, dbh, search = "nearest", n)
 }
 \description{
-Distance-dependent Hegyi (1974) index
+Index of Hegyi (1974)
 }
 

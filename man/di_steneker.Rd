@@ -2,12 +2,12 @@
 % Please edit documentation in R/02_distance_independent.R
 \name{di_steneker}
 \alias{di_steneker}
-\title{Distance-independent Steneker & Jarvis (1963) index}
+\title{Index of Steneker & Jarvis (1963)}
 \usage{
 di_steneker(dbh, area)
 }
 \description{
-Sum of the basal area (g) of the neighbouring trees j 
+Sum of the basal area (g) of the neighbouring trees j
 for a subject tree i (m2 ha-1)
 }
 

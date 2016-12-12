@@ -2,11 +2,11 @@
 % Please edit documentation in R/02_distance_dependent.R
 \name{dd_martin}
 \alias{dd_martin}
-\title{Distance-dependent Matin & Ek (1984) index}
+\title{Index of Matin & Ek (1984)}
 \usage{
 dd_martin(id, x, y, dbh, search = "nearest", n)
 }
 \description{
-Distance-dependent Matin & Ek (1984) index
+Index of Matin & Ek (1984)
 }
 

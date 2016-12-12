@@ -2,11 +2,11 @@
 % Please edit documentation in R/02_distance_dependent.R
 \name{dd_daniels}
 \alias{dd_daniels}
-\title{Distance-dependent Daniels et al. (1986) index}
+\title{Index of Daniels et al. (1986)}
 \usage{
 dd_daniels(id, x, y, dbh, search = "nearest", n)
 }
 \description{
-Distance-dependent Daniels et al. (1986) index
+Index of Daniels et al. (1986)
 }
 

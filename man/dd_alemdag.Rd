@@ -2,11 +2,11 @@
 % Please edit documentation in R/02_distance_dependent.R
 \name{dd_alemdag}
 \alias{dd_alemdag}
-\title{Distance-dependent Alemdag (1978) index}
+\title{Index of Alemdag (1978)}
 \usage{
 dd_alemdag(id, x, y, dbh, search = "nearest", n)
 }
 \description{
-Distance-dependent Alemdag (1978) index
+Index of Alemdag (1978)
 }
 

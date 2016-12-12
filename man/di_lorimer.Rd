@@ -2,7 +2,7 @@
 % Please edit documentation in R/02_distance_independent.R
 \name{di_lorimer}
 \alias{di_lorimer}
-\title{Distance-independent Lorimer (1982) index}
+\title{Index of Lorimer (1982)}
 \usage{
 di_lorimer(dbh)
 }

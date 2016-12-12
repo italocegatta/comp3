@@ -2,7 +2,7 @@
 % Please edit documentation in R/02_distance_independent.R
 \name{di_vanclay}
 \alias{di_vanclay}
-\title{Distance-independent Vanclay (1991)}
+\title{Index of Vanclay (1991)}
 \usage{
 di_vanclay(dbh, area)
 }

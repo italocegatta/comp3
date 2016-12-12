@@ -1,6 +1,6 @@
 #' Search potential competitor around fixed distance
 #'
-#' @export
+#'
 #'
 search_dfixed <- function(id, x, y, dist) {
   .class <- if (class(id) == "factor") {
@@ -32,7 +32,7 @@ search_dfixed <- function(id, x, y, dist) {
 
 #' Search n nearest potential competitor
 #'
-#' @export
+#'
 #'
 search_nearest <- function(id, x, y, nearest) {
   .class <- if (class(id) == "factor") {

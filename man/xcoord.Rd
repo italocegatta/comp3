@@ -9,19 +9,4 @@ xcoord(x, xspacing = 3, ncol = 8, start = "left-bottom")
 \description{
 Local x coordinator
 }
-\examples{
-
-#library(ggplot2)
-#library(dplyr)
-#
-#d <- data_frame(a=1:80) \%>\% 
-#mutate(
-# x = xcoord(a, start = 'left-bottom'),
-# y = ycoord(a, start = 'left-bottom')
-#) 
-#
-#ggplot(d, aes(x, y, label = a)) +
-# geom_text()
-
-}
 

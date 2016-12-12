@@ -2,7 +2,7 @@
 % Please edit documentation in R/02_distance_independent.R
 \name{di_wikoff}
 \alias{di_wikoff}
-\title{Distance-independent Wikoff (1982) index}
+\title{Index of Wikoff (1982)}
 \usage{
 di_wikoff(dbh, area)
 }

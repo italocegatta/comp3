@@ -2,7 +2,7 @@
 % Please edit documentation in R/02_distance_independent.R
 \name{di_hamilton}
 \alias{di_hamilton}
-\title{Distance-independent Hamilton (1986) index}
+\title{Index of Hamilton (1986)}
 \usage{
 di_hamilton(dbh)
 }

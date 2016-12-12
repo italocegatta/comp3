@@ -2,7 +2,7 @@
 % Please edit documentation in R/02_distance_independent.R
 \name{di_corrona}
 \alias{di_corrona}
-\title{Distance-independent Corrona & Ferrara (1989)}
+\title{Index of Corrona & Ferrara (1989)}
 \usage{
 di_corrona(dbh, area)
 }

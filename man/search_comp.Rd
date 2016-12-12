@@ -2,11 +2,11 @@
 % Please edit documentation in R/00_util.R
 \name{search_comp}
 \alias{search_comp}
-\title{search competitor}
+\title{Search competitor}
 \usage{
 search_comp(id, x, y, dbh, search, n)
 }
 \description{
-search competitor
+Search competitor
 }
 
