@@ -1,7 +1,18 @@
-#' Search potential competitor around fixed distance
+#' Search competitor
 #'
-#'
-#'
+#' @export
+search_comp <- function(id, x, y, dbh, search, n) {
+
+  if (search == "nearest") {
+    compts <- search_nearest(id, x, y, n)
+  } else {
+    compts <- search_dfixed(id, x, y, n)
+  }
+
+}
+
+# Search potential competitor around fixed distance
+#
 search_dfixed <- function(id, x, y, dist) {
   .class <- if (class(id) == "factor") {
     "character"
@@ -30,10 +41,8 @@ search_dfixed <- function(id, x, y, dist) {
   return(z)
 }
 
-#' Search n nearest potential competitor
-#'
-#'
-#'
+# Search n nearest potential competitor
+#
 search_nearest <- function(id, x, y, nearest) {
   .class <- if (class(id) == "factor") {
     "character"
@@ -62,4 +71,35 @@ search_nearest <- function(id, x, y, nearest) {
     )
 
   return(z)
+}
+
+# get classe to set all columns in the same object-class
+#
+get_class <- function(x) {
+  if (class(x) == "factor") {
+    "character"
+  } else {
+    class(x)
+  }
+}
+
+# Join Object-tree with competitor-tree in the same data.frame
+#
+join_objtree_compt <- function(id, x, y, dbh, search, n) {
+
+  compts <- search_comp(id, x, y, dbh, search, n)
+
+  .class <- get_class(id)
+
+  aux <- dplyr::data_frame(id = 'class<-'(id, .class), dbh)
+
+  df <- compts %>% dplyr::left_join(
+    aux,
+    by = c("competitor" = "id")
+  ) %>%
+    dplyr::arrange(as.numeric(id)) %>%
+    left_join(aux, by = c("id" = "id")) %>%
+    rename(dbh_id = dbh.y, dbh_comp = dbh.x)
+
+  return(df)
 }

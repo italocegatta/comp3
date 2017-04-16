@@ -4,7 +4,6 @@
 #' for a subject tree i (m2 ha-1)
 #'
 #' @export
-#'
 di_steneker <- function(dbh, area) {
   ba <- (pi*dbh^2)/(4*area)
   z <- sum(ba, na.rm = TRUE) - ba
@@ -17,7 +16,6 @@ di_steneker <- function(dbh, area) {
 #' Sum of the basal area of trees larger than the subject tree (m2 ha-1)
 #'
 #' @export
-#'
 di_wikoff <- function(dbh, area) {
   ba <- (pi*dbh^2)/(4*area)
 
@@ -39,7 +37,6 @@ di_wikoff <- function(dbh, area) {
 #' tree d in the plot (ha-1)
 #'
 #' @export
-#'
 di_lorimer <- function(dbh) {
   z <- vector(length = length(dbh))
   for (i in seq_along(dbh)) {
@@ -58,7 +55,6 @@ di_lorimer <- function(dbh) {
 #' Ratio of the diameter of the subject tree to the quadratic mean diameter
 #'
 #' @export
-#'
 di_hamilton <- function(dbh) {
   dg <- sqrt(mean(dbh^2, na.rm = TRUE))
   z <- dbh / dg
@@ -72,7 +68,6 @@ di_hamilton <- function(dbh) {
 #' tree basal area in the plot (ha-1)
 #'
 #' @export
-#'
 di_corrona <- function(dbh, area) {
   ba <- (pi*dbh^2)/(4*area)
 
@@ -94,7 +89,6 @@ di_corrona <- function(dbh, area) {
 #' to basal area of the plot
 #'
 #' @export
-#'
 di_vanclay <- function(dbh, area) {
   ba <- (pi*dbh^2)/(4*area)
   g <- sum(ba, na.rm = TRUE)

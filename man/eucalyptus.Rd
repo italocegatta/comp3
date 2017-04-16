@@ -3,16 +3,21 @@
 \docType{data}
 \name{eucalyptus}
 \alias{eucalyptus}
-\title{A amesure plot of Eucalyptus}
-\format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2240 rows and 8 columns.}
+\title{Eucalyptus}
+\format{A data frame with eight variables:
+\itemize{
+  \item{\code{site}}{: Three different sites}
+  \item{\code{area}}{: Plot area in squart meters}
+  \item{\code{age}}{: Tree age in years}
+  \item{\code{tree}}{: Tree number on the plot}
+  \item{\code{dbh}}{: Diameter of trees at 1.3 meters }
+  \item{\code{h}}{: Height of trees in meters}
+  \item{\code{cod}}{: Attributes of trees}
+}}
 \usage{
 eucalyptus
 }
 \description{
 A amesure plot of Eucalyptus
 }
-\examples{
-
-}
 \keyword{datasets}
-

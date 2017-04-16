@@ -1,7 +1,6 @@
 #' Index of Daniels et al. (1986)
 #'
 #' @export
-#'
 dd_daniels <- function(id, x, y, dbh, search = "nearest", n) {
 
   df <-   join_objtree_compt(id, x, y, dbh, search, n)
@@ -24,7 +23,6 @@ dd_daniels <- function(id, x, y, dbh, search = "nearest", n) {
 #' Index of Hegyi (1974)
 #'
 #' @export
-#'
 dd_hegyi <- function(id, x, y, dbh, search = "nearest", n) {
 
   df <- join_objtree_compt(id, x, y, dbh, search, n)
@@ -42,7 +40,6 @@ dd_hegyi <- function(id, x, y, dbh, search = "nearest", n) {
 #' Index of Alemdag (1978)
 #'
 #' @export
-#'
 dd_alemdag <- function(id, x, y, dbh, search = "nearest", n) {
 
   df <- join_objtree_compt(id, x, y, dbh, search, n)
@@ -71,7 +68,6 @@ dd_alemdag <- function(id, x, y, dbh, search = "nearest", n) {
 #' Index of Matin & Ek (1984)
 #'
 #' @export
-#'
 dd_martin <- function(id, x, y, dbh, search = "nearest", n) {
   df <- join_objtree_compt(id, x, y, dbh, search, n)
 

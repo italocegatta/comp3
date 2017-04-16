@@ -1,7 +1,6 @@
 #' Available trees for measure and compute index
 #'
 #' @export
-#'
 available_tree <- function(x, y, border) {
   ifelse(
     '&'(
