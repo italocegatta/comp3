@@ -2,10 +2,27 @@
 % Please edit documentation in R/distance-dependent.R
 \name{dd_daniels}
 \alias{dd_daniels}
-\title{Index of Daniels et al. (1986)}
+\title{Daniels index}
 \usage{
-dd_daniels(id, x, y, dbh, search = "nearest", n)
+dd_daniels(id, x, y, dbh, search = "nearest", n = 6)
+}
+\arguments{
+\item{id}{tree identification}
+
+\item{x}{x numeric vector of tree coordinates.}
+
+\item{dbh}{diameter of trees at 1.3 meters.}
+
+\item{search}{method to search competitive trees. Use "nearest" to find
+the \code{n} trees nearest of object tree or "dfixed" to find any tree around
+of \code{n} distance.}
 }
 \description{
-Index of Daniels et al. (1986)
+Sum of circular segments calculated between
+the object tree and its competitors.
+}
+\references{
+DANIELS, R. F.; BURKHART, H. E.; CLASON, T. R. A comparison of
+competition measures for predicting growth of loblolly pine trees. Canadian
+Journal of Forest Research, v. 16, n. 6, p. 1230–1237, dez. 1986.
 }

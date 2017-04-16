@@ -1,13 +1,14 @@
-#' Search competitor
-#'
-#' @export
-search_comp <- function(id, x, y, dbh, search, n) {
+# Search competitor
+#
+search_comp <- function(id, x, y, search = "nearest", n = 6) {
 
   if (search == "nearest") {
     compts <- search_nearest(id, x, y, n)
   } else {
     compts <- search_dfixed(id, x, y, n)
   }
+
+  return(compts)
 
 }
 

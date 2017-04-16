@@ -2,10 +2,27 @@
 % Please edit documentation in R/distance-dependent.R
 \name{dd_hegyi}
 \alias{dd_hegyi}
-\title{Index of Hegyi (1974)}
+\title{Hegyi index}
 \usage{
 dd_hegyi(id, x, y, dbh, search = "nearest", n)
 }
+\arguments{
+\item{id}{tree identification}
+
+\item{x}{x numeric vector of tree coordinates.}
+
+\item{dbh}{diameter of trees at 1.3 meters.}
+
+\item{search}{method to search competitive trees. Use "nearest" to find
+the \code{n} trees nearest of object tree or "dfixed" to find any tree around
+of \code{n} distance.}
+}
 \description{
-Index of Hegyi (1974)
+Sum of the competitor's diameter divided by the distance and diameter of the
+object tree.
+}
+\references{
+HEGYI F. A simulation model for managing jack-pine stands.
+In: FRIES G, editor. Growth models for tree and stand population.
+Stockolm: Royal College of Forestry; 1974. p. 74-90.
 }

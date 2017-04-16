@@ -2,10 +2,31 @@
 % Please edit documentation in R/border.R
 \name{available_tree}
 \alias{available_tree}
-\title{Available trees for measure and compute index}
+\title{Available trees for measure and compute index.}
 \usage{
 available_tree(x, y, border)
 }
+\arguments{
+\item{x, }{x numeric vector of coordinates.}
+
+\item{border}{numeric, buffer distance of boundary plot.}
+}
 \description{
-Available trees for measure and compute index
+This function works in retangular plots and identify wich trees are
+available for a util plot. The \code{border} parameter set how many spatial units (i.e. meters)
+will be used to creates buffer offsets.
+}
+\examples{
+df <- data_frame(id = 1:25) \%>\%
+  mutate(
+    x = xcoord(x = id, xspacing =  2, ncol =  5, star = "left-bottom"),
+    y = ycoord(x = id, yspacing =  2, ncol =  5, star = "left-bottom")
+  ) \%>\%
+  mutate(border = available_tree(x = x, y = y, border = 1))
+
+if (require(ggplot2)) {
+ ggplot(df, aes(x, y, label = id, color = border)) +
+   geom_point(size = 4)
+}
+
 }
